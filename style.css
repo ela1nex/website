@@ -108,6 +108,13 @@ a:hover {
 #about-toggle {
     cursor: pointer;
     text-decoration: underline;
+    position: relative;
+    z-index: 100;
+    background: transparent;
+}
+
+#about-toggle:hover {
+    text-decoration: underline wavy;
 }
 
 .about-tab {
