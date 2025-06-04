@@ -13,6 +13,7 @@ hi! i'm elaine, a rising high school junior! this is my personal portfolio site 
 
 ## 🛒 how to view
 you can visit the live site at: [https://ela1nex.github.io/website]
+best viewed on laptop
 
 ## 📦 future updates (?!)
 - x to close out of tabs
