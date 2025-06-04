@@ -77,6 +77,12 @@ h2 {
     font-size: clamp(2vh, 2.25vh, 2.5vh);
 }
 
+.centered-receipt-line {
+    text-align: center;
+    font-family: 'hearts';
+    font-size: clamp(2vh, 2.25vh, 2.5vh);
+}
+
 hr {
     margin-bottom: 0.25vh;
     margin-top: 0.25vh;
@@ -105,9 +111,14 @@ a:hover {
     width: auto;
 }
 
+.section-title {
+    color: #5388a5;
+}
+
 #about-toggle {
     cursor: pointer;
     text-decoration: underline;
+    text-decoration-color: #5388a5;
     position: relative;
     z-index: 100;
     background: transparent;
@@ -115,6 +126,7 @@ a:hover {
 
 #about-toggle:hover {
     text-decoration: underline wavy;
+    text-decoration-color: #5388a5;
 }
 
 #graphic-design-toggle {
@@ -164,7 +176,9 @@ a:hover {
 }
 
 .graphic-design-tab.show {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vh;
 }
 
 .about-photo {

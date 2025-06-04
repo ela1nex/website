@@ -45,10 +45,22 @@ document.addEventListener("DOMContentLoaded", function() {
             startX = e.clientX
             startY = e.clientY
 
-            tab.style.left = (tab.offsetLeft + newX) + 'px'
-            tab.style.top = (tab.offsetTop + newY) + 'px'
+            const tabRect = tab.getBoundingClientRect();
+            const parent = document.documentElement;
 
-            console.log({newX, newY});
+            let newLeft = tab.offsetLeft + newX;
+            let newTop = tab.offsetTop + newY;
+
+            const tabWidth = tab.offsetWidth;
+            const tabHeight = tab.offsetHeight;
+            const windowWidth = window.innerWidth;
+            const windowHeight = window.innerHeight;
+
+            newLeft = Math.max(0, Math.min(newLeft, windowWidth - tabWidth));
+            newTop = Math.max(0, Math.min(newTop, windowHeight - tabHeight));
+
+            tab.style.left = newLeft + 'px';
+            tab.style.top = newTop + 'px';
         }
 
         function mouseUp() {
