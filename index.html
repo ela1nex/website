@@ -10,8 +10,18 @@
 <body>
     <div class="about-tab" id="about-tab">
         <h2 class="section-title"> about me </h2>
-        <img src="self.png" alt="photo of elaine" class="about-photo" />
+        <img src="self.png" alt="photo of elaine" class="about-photo" draggable="false" />
         <p class="receipt-line"> hi! i'm elaine, a rising high school junior (class of '27) based in the bay area. i'm interested in engineering (specifically electrical/computer) and design, and i love building things that are both functional and aesthetic ! </p>
+    </div>
+
+    <div class="graphic-design-tab" id="graphic-design-tab">
+        <h2 class="section-title"> graphic design samples </h2>
+        <p class="receipt-line"> i have experience with graphic design in canva and figma. i've also done ui/ux design using pyqt and matplotlib. i have video editing experience in da vinci resolve and capcut.</p>
+        <p class="receipt-line"> here are some things i've made! </p>
+        <img src="samples/insta_gardenclub.png" alt="instagram post for garden club" class="design-sample" draggable="false" />
+        <img src="samples/insta_hkrvsla_wp.png" alt="instagram post for harker water polo" class="design-sample" draggable="false" />
+        <img src="samples/poster_presentation_cyc.png" alt="poster for cyc president's talk" class="design-sample" draggable="false" />
+        <img src="samples/poster_synopsystour_cyc.png" alt="poster for cyc synopsys tour" class="design-sample" draggable="false" />
     </div>
 
     <div class="container">
@@ -28,7 +38,7 @@
         <div class="content">
             <div class="section">
                 <h2 class="section-title"> projects </h2>
-                <p class="receipt-line"> > <a href="https://drive.google.com/drive/folders/1bZ5buiuEdyDjDw1Sd6Qa37mNimB34K_i?usp=sharing" target="_blank">graphic design samples</a> . . . . . . . . . . . . . . . . . . . . . . .</p>
+                <p class="receipt-line"> > <span id="graphic-design-toggle">graphic design samples</span> . . . . . . . . . . . . . . . . . . . . . . .</p>
                 <p class="receipt-line"> > <a href="https://github.com/ela1nex/website" target="_blank"> this website</a> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
             </div>
 
@@ -47,7 +57,6 @@
         
     </div>
 
-    
+    <script src="main.js"></script>
 </body>
-<script src="main.js"></script>
 </html>

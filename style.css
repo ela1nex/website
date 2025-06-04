@@ -117,6 +117,18 @@ a:hover {
     text-decoration: underline wavy;
 }
 
+#graphic-design-toggle {
+    cursor: pointer;
+    position: relative;
+    z-index: 100;
+    background: transparent;
+}
+
+#graphic-design-toggle:hover {
+    font-style: italic;
+    opacity: 0.6;
+}
+
 .about-tab {
     display: none;
     position: absolute;
@@ -136,9 +148,37 @@ a:hover {
     display: block;
 }
 
+.graphic-design-tab {
+    display: none;
+    position: absolute;
+    top: 10vh;
+    right: 5vw;
+    padding: 2vh;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 1vh;
+    width: 45vh;
+    font-family: 'kiwi';
+    z-index: 9999;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: move;
+}
+
+.graphic-design-tab.show {
+    display: block;
+}
+
 .about-photo {
     width: 44vh;
     height: auto;
     border-radius: 1vh;
     margin-bottom: 1vh;
+    cursor: default;
+}
+
+.design-sample {
+    width: 21vh;
+    height: auto;
+    padding: 0.5vh;
+    padding-bottom: 0vh;
+    cursor: default;
 }
