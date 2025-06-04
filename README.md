@@ -12,7 +12,7 @@ hi! i'm elaine, a rising high school junior! this is my personal portfolio site 
 - animated typing effect for site title
 
 ## 🛒 how to view
-you can visit the live site at: [https://ela1nex.github.io/website]
+you can visit the live site at: [https://ela1nex.github.io/website] OR [elainexia.pages.dev]
 best viewed on laptop
 
 ## 📦 future updates (?!)
