@@ -34,12 +34,20 @@ div {
 
 .heading {
     width: 45vh;
-    margin-top: -30vh;
+    margin-top: -20vh;
 }
 
 .content {
     width: 45vh;
-    margin-top: 7vh;
+    margin-top: 4vh;
+}
+
+.footer {
+    width: 45vh;
+    margin-top: 5.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @keyframes typing {
@@ -84,4 +92,14 @@ a {
 a:hover {
     opacity: 0.6;
     font-style: italic;
+}
+
+.visitor-count {
+    font-family: hearts;
+    font-size: clamp(1.5vh, 1.75vh, 2vh);
+}
+
+.visitor-count img {
+    height: 1.5vh;
+    width: auto;
 }
