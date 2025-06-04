@@ -4,11 +4,25 @@ document.addEventListener("DOMContentLoaded", function() {
     const graphicTab = document.getElementById("graphic-design-tab");
     const graphicToggle = document.getElementById("graphic-design-toggle");
 
+    const baseZIndex = 9999;
+    function bringToFront(tabToBring) {
+        aboutTab.style.zIndex = baseZIndex;
+        graphicTab.style.zIndex = baseZIndex;
+
+        tabToBring.style.zIndex = baseZIndex + 1;
+    }
+
     aboutToggle.addEventListener("click", () => {
         aboutTab.classList.toggle("show");
+        if (aboutTab.classList.contains("show")) {
+            bringToFront(aboutTab);
+        }
     });
     graphicToggle.addEventListener("click", () => {
         graphicTab.classList.toggle("show");
+        if (graphicTab.classList.contains("show")) {
+            bringToFront(graphicTab);
+        }
     });
 
     function makeDraggable(tab) {
@@ -16,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         tab.addEventListener('mousedown', mouseDown)
         function mouseDown(e) {
+            bringToFront(tab);
             startX = e.clientX
             startY = e.clientY
 
