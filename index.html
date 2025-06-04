@@ -7,17 +7,8 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            document.getElementById("about-toggle").addEventListener("click", function() {
-                const tab = document.getElementById("aboutTab");
-                tab.classList.toggle("show");
-            });
-        });
-    </script>
-    
-    <div class="about-tab" id="aboutTab">
-        <h2 class="section-title"> about </h2>
+    <div class="about-tab" id="about-tab">
+        <h2 class="section-title"> about me </h2>
         <img src="self.png" alt="photo of elaine" class="about-photo" />
         <p class="receipt-line"> hi! i'm elaine, a rising high school junior (class of 27) based in the bay area. i'm interested in engineering (specifically electrical/computer) and design, and i love building things that are both functional and aesthetic ! </p>
     </div>
@@ -55,8 +46,7 @@
         
     </div>
 
-    <script>
-        document.getElementById("date").textContent = new Date().toLocaleDateString();
-    </script>
+    
 </body>
+<script src="main.js"></script>
 </html>
