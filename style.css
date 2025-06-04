@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    overscroll-behavior: none;
 }
 
 @font-face {
@@ -13,35 +14,54 @@
     font-family: 'kiwi';
 }
 
-.header {
-    background-color: rgb(68, 98, 157);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 10px;
-}
-
 div {
     font-family: 'kiwi';
 }
 
 .container {
-    border: 0px;
     background-image: url(https://i.pinimg.com/736x/c1/e5/b2/c1e5b289a7939028bb39dbca5b57b906.jpg);
-    background-size: contain;;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     height: 70vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.main {
+.heading {
     height: 50vh;
-    width: 60vh;
+    width: 45vh;
     border: 0px;
     position: absolute;
     padding: 5vh;
     top: 50%;
     left: 50%;
-    transform: translate(-37.5%, -90%);
+    transform: translate(-50%, -90%);
 }
 
+.section {
+    transform: translateY(-90%);
+    width: 45vh;
+}
+
+h1 {
+    padding-bottom: 0.1vh;
+    font-size: clamp(3vh, 4vh, 5vh);
+}
+
+h2 {
+    font-size: clamp(2.75vh, 3vh, 3.25vh);
+    padding-bottom: 0.1vh;
+}
+
+.receipt-line {
+    font-family: 'hearts';
+    font-size: clamp(2vh, 2.25vh, 2.5vh);
+}
+
+hr {
+    margin-bottom: 0.25vh;
+    margin-top: 0.25vh;;
+}
