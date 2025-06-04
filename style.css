@@ -103,3 +103,35 @@ a:hover {
     height: 1.5vh;
     width: auto;
 }
+
+#about-toggle {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.about-tab {
+    display: none;
+    position: absolute;
+    top: 15vh;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2vh;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 1vh;
+    width: 45vh;
+    font-family: 'kiwi';
+    z-index: 9999;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: move;
+}
+
+.about-tab.show {
+    display: block;
+}
+
+.about-photo {
+    width: 44vh;
+    height: auto;
+    border-radius: 1vh;
+    margin-bottom: 1vh;
+}
