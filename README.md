@@ -1,5 +1,5 @@
 # elaine's personal website 🖇️💾
-hi! i'm elaine, a rising high school junior! this is my personal portfolio site where i showcase my work in engineering and design.
+hi! i'm elaine! this is my personal portfolio site where i showcase my work in engineering and design.
 
 ## 🦭 about the project
 ### built with
@@ -23,4 +23,4 @@ best viewed on laptop
 ---
 
 thanks for checking out my work!
-README last updated 06/04/2025
+README last updated 08/28/2025
